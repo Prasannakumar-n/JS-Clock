@@ -1,0 +1,34 @@
+body{
+    background-color: aqua;
+}
+
+.Clock{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+}
+
+.Clock .number{
+    --rotation : 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+}
+
+.Clock .number1{--rotation: 30deg;}
+.Clock .number2{--rotation: 60deg;}
+.Clock .number3{--rotation: 90deg;}
+.Clock .number4{--rotation: 120deg;}
+.Clock .number5{--rotation: 150deg;}
+.Clock .number6{--rotation: 180deg;}
+.Clock .number7{--rotation: 210deg;}
+.Clock .number8{--rotation: 240deg;}
+.Clock .number9{--rotation: 270deg;}
+.Clock .number10{--rotation: 300deg;}
+.Clock .number11{--rotation: 330deg;}
+.Clock .number12{--rotation: 360deg;}
