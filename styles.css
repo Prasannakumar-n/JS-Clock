@@ -32,3 +32,43 @@ body{
 .Clock .number10{--rotation: 300deg;}
 .Clock .number11{--rotation: 330deg;}
 .Clock .number12{--rotation: 360deg;}
+
+.Clock .hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    background-color: black;
+    transform: translateX(-50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Clock .hand.second{
+    width: 3px;
+    height: 40%;
+    background-color: red;
+    transform: rotate(30deg);
+}
+.Clock .hand.minute{
+    width: 5px;
+    height: 37%;
+    background-color: black;
+    transform: rotate(120deg);
+}
+.Clock .hand.hour{
+    width: 10px;
+    height: 32%;
+    background-color: black;
+}
+
+.Clock .center{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translateX(-50%) translateY(50%);
+}
