@@ -5,6 +5,7 @@ body{
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
+    background-image: linear-gradient(to right, hsl(200,100%,50%), hsl(175, 100%, 50%));
 }
 
 .Clock{
@@ -50,28 +51,27 @@ body{
     background-color: black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    transform: rotate(calc(var(--rotation)*1deg));
+    
 }
 
 .Clock .hand.second{
     width: 3px;
     height: 40%;
     background-color: red;
-    transform: translateX(-50%);
-    /* transform: rotate(30deg); */
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
 }
 .Clock .hand.minute{
     width: 5px;
     height: 37%;
     background-color: black;
-    transform: translateX(-50%);
-    /* transform: rotate(120deg); */
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));;
 }
 .Clock .hand.hour{
     width: 10px;
     height: 32%;
     background-color: black;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+
 }
 
 .Clock .center{
